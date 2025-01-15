@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
         self.photo = ImageHoverWidget()  # Use ImageHoverWidget here
         self.photo.setGeometry(QtCore.QRect(0, 0, 801, 411))
         self.photo.image_label.setPixmap(QtGui.QPixmap("band_for_band.jpg"))  # Set initial image
-        self.photo.image_label.setScaledContents(True)
+        self.photo.image_label.setScaledContents(True) # I don't know if this is necessary because of setContentsMargins in ImageHoverWidget.py
         self.photo.setObjectName("photo")
         self.photo.setParent(self.centralwidget)  # Add it to the central widget
         
