@@ -8,13 +8,11 @@ class ImageHoverWidget(QWidget):
 
         # Create the QLabel for the image
         self.image_label = QLabel(self)
-        # self.image_label.setPixmap(QPixmap("wholenote.png"))
         self.image_label.setScaledContents(True)  # Enable scaling
         self.image_label.hide()  # Hide initially
 
         # Create a layout for proper resizing
         layout = QVBoxLayout(self)
-        # layout.addWidget(QLabel("Hover over me!")) 
         layout.addWidget(self.image_label)
         layout.setContentsMargins(0, 0, 0, 0)  # Remove margins
         self.setLayout(layout)
